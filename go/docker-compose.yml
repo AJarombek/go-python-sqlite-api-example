@@ -4,8 +4,8 @@
 
 version: '3'
 services:
-  employee-api-python:
+  employee-api-go:
     build:
       context: .
     ports:
-      - 5000:5000
+      - 5001:5001
