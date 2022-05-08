@@ -9,29 +9,33 @@ Basic example API that uses Python & Go to read from a SQLite database and retur
 **Python API**
 
 ```bash
-# Start the API
+# Set your desired port
+PORT=5001
 
+# Start the API
 cd python
-docker-compose up
+PORT=$PORT docker-compose up
 ```
 
 ```bash
 # Query the API
 
-curl localhost:5000/employees
+curl localhost:$PORT/employees
 ```
 
 **Go API**
 
 ```bash
-# Start the API
+# Set your desired port
+PORT=5002
 
+# Start the API
 cd go
-docker-compose up
+PORT=$PORT docker-compose up
 ```
 
 ```bash
 # Query the API
 
-curl localhost:5001/employees
+curl localhost:$PORT/employees
 ```

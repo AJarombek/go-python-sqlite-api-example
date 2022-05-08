@@ -68,7 +68,7 @@ func main() {
 	router := gin.Default()
 	router.GET("/", entrypoint)
 	router.GET("/employees", getEmployees)
-	err = router.Run("0.0.0.0:5001")
+	err = router.Run("0.0.0.0:5000")
 
 	if err != nil {
 		panic("Failed to start the API")

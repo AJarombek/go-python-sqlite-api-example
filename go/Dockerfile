@@ -13,6 +13,6 @@ COPY . .
 RUN apk add gcc libc-dev linux-headers
 
 STOPSIGNAL SIGTERM
-EXPOSE 5001
+EXPOSE 5000
 
 ENTRYPOINT ["go", "run", "."]
